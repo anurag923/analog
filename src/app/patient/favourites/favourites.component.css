@@ -1,0 +1,19 @@
+.view-btn {
+  color: #0154a2;
+  font-size: 13px;
+  border: 2px solid #0154a2;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+padding: 6px;
+}
+.book-btn {
+  background-color: #0154a2;
+  border: 2px solid #0154a2;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+  padding: 6px;
+}

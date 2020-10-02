@@ -1,0 +1,40 @@
+.feature-section
+{
+    background:#fff;
+    padding:80px 0;
+}
+.feature-item img {
+    border-radius: 100%;
+    box-shadow: 1px 6px 14px rgba(0,0,0,0.2);
+    height: 115px;
+    object-fit: cover;
+	width: 115px;
+}
+.feature-item p {
+    font-weight: 500;
+    margin: 20px 0 0;
+}
+.features-slider .slick-slide {
+	margin-right: 62px;
+}
+.features-slider .slick-center {
+    opacity: 1;
+    transform: scale(1.20);
+}
+.features-slider .slick-list {
+    padding: 16px 50px !important
+}
+.features-slider .slick-dots {
+    margin-top: 44px;
+    position: unset;
+}
+.section-blogs {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.view-all .btn {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+}

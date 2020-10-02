@@ -1,0 +1,29 @@
+.dashboard-menu ul li {
+	line-height: inherit;
+}
+.dashboard-menu > ul > li {
+	border-bottom:1px solid #f0f0f0;
+	position: relative;
+}
+.dashboard-menu > ul > li:last-child {
+	border-bottom: 0;
+}
+.dashboard-menu ul li a span,
+.dashboard-menu ul li a i {
+	display: inline-block;
+	vertical-align: middle;
+}
+.dashboard-menu > ul > li > a {
+	color: #757575;
+	display: block;
+	padding: 16px 20px;
+}
+.dashboard-menu > ul > li:hover > a,
+.dashboard-menu > ul > li.active > a {
+	color:#0154a2;
+}
+.dashboard-menu ul li a i {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 16px;
+}

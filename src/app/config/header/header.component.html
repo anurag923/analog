@@ -1,0 +1,157 @@
+<div class="header-menu">
+
+
+
+
+
+
+  <div class="container-fluid">
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src="../../assets/images/logo.png" class="img-sz"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+          <ul class="navbar-nav menu-nav header-nav px-5 mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="dropdown" href="#">Patients <i class="fa fa-chevron-down icn-fn"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Doctors <i class="fa fa-chevron-down icn-fn"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pharmacy <i class="fa fa-chevron-down icn-fn"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clinic <i class="fa fa-chevron-down icn-fn"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog <i class="fa fa-chevron-down icn-fn"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+            <ul class="navbar-nav contact-right">
+                <li class="nav-item mr-3">
+                  <a class="nav-link" href="#"> <img src="../../assets/images/header-icons/phone-icon.png" class="phn-sz"> +91 40-2536589</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary font-weight-normal" href="#">LOGIN / SIGNUP</a>
+                </li>
+             </ul>
+        </div>
+    </nav>-->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src="../../assets/images/logo.png" class="img-sz"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link px-4" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Patients <i class="fa fa-chevron-down icn-fn"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/patient/doctorview']">Doctors View</a>
+              <a class="dropdown-item" [routerLink]="['/patient/searchdoctor']">Search Doctor</a>
+              <a class="dropdown-item" [routerLink]="['/patient/doctorprofile']">Doctor Profile</a>
+              <a class="dropdown-item" [routerLink]="['/patient/booking']">Booking</a>
+              <a class="dropdown-item" [routerLink]="['/patient/checkout']">Checkout</a>
+              <a class="dropdown-item" [routerLink]="['/patient/bookingsuccess']">Booking Success</a>
+              <a class="dropdown-item" [routerLink]="['/patient/patientdashboard']">Patient Dashboard</a>
+              <a class="dropdown-item" [routerLink]="['/patient/favourites']">Favourites</a>
+              <a class="dropdown-item" [routerLink]="['/patient/chat']">Chat</a>
+              <a class="dropdown-item" [routerLink]="['/patient/profilesettings']">Profile Settings</a>
+              <a class="dropdown-item" [routerLink]="['/patient/changepassword']">Change Password</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Doctors <i class="fa fa-chevron-down icn-fn"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/doctor/doctordashboard']">Doctor Dashboard</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/appointments']">Appointments</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/scheduletimings']">Schedule Timing</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/mypatients']">Patients List</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/patientprofile']">Patients Profile</a>
+              <a class="dropdown-item" [routerLink]="['/patient/chat']">Chat</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/invoices']">Invoices</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/doctorprofilesettings']">Profile Settings</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/reviews']">Reviews</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/doctorregister']">Doctor Register</a>
+              <a class="dropdown-item" [routerLink]="['/doctor/blog']">Blog</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pharmacy <i class="fa fa-chevron-down icn-fn"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lab <i class="fa fa-chevron-down icn-fn"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">links</a>
+              <a class="dropdown-item" href="#">links</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">links</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Clinic <i class="fa fa-chevron-down icn-fn"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">links</a>
+              <a class="dropdown-item" href="#">links</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">links</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About us
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="nav-link" href="#"> <img src="../../assets/images/header-icons/phone-icon.png" class="phn-sz"> +91 40-2536589</a>
+
+          <a class="nav-link btn btn-outline-primary font-weight-normal" [routerLink]="['login']">LOGIN</a>
+          <a class="nav-link btn btn-outline-primary font-weight-normal" [routerLink]="['signup']">SIGNUP</a>
+        </form>
+      </div>
+    </nav>
+</div>
+</div>
