@@ -40,7 +40,9 @@ import { ReviewsComponent } from './doctor/reviews/reviews.component';
 import { ScheduletimingsComponent } from './doctor/scheduletimings/scheduletimings.component';
 import { DoctorsidebarComponent } from './doctor/doctorsidebar/doctorsidebar.component';
 import { LoginComponent } from 'src/app/auth/login/login.component';
-import { SignupComponent } from './auth/signup/signup.component'
+import { SignupComponent } from 'src/app/auth/signup/signup.component';
+import { OtpComponent } from './auth/otp/otp.component';
+import { GridviewComponent } from './patient/gridview/gridview.component'
 
 @NgModule({
   declarations: [
@@ -81,7 +83,9 @@ import { SignupComponent } from './auth/signup/signup.component'
     ScheduletimingsComponent,
     DoctorsidebarComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    OtpComponent,
+    GridviewComponent
   ],
   imports: [
     BrowserModule,

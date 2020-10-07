@@ -28,8 +28,9 @@ import { ReviewsComponent } from './doctor/reviews/reviews.component';
 import { ScheduletimingsComponent } from './doctor/scheduletimings/scheduletimings.component';
 import { SocialmediaComponent } from './doctor/socialmedia/socialmedia.component';
 import { LoginComponent } from 'src/app/auth/login/login.component';
-import { SignupComponent } from './auth/signup/signup.component';
-
+import { SignupComponent } from 'src/app/auth/signup/signup.component';
+import { OtpComponent } from 'src/app/auth/otp/otp.component';
+import { GridviewComponent } from './patient/gridview/gridview.component'
 const routes: Routes = [
 
            {
@@ -42,8 +43,12 @@ const routes: Routes = [
           {
             path:'signup', component:SignupComponent
           },
-
-
+          {
+            path:'otp', component:OtpComponent
+          },
+            {
+              path:'patient/gridview', component:GridviewComponent
+            },
            {
             path:'patient/doctorview', component:DoctorviewComponent
           },
@@ -160,21 +165,9 @@ const routes: Routes = [
                       path:'doctor/socialmedia', component:SocialmediaComponent
                     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-     {
-      path:'**', component:PageNotFoundComponent
-    },
+                   {
+                    path:'**', component:PageNotFoundComponent
+                  },
 ];
 
 @NgModule({

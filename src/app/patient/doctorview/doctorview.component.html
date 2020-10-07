@@ -3,7 +3,7 @@
   <div class="container-fluid">
 
         <div class="row">
-    <div class="col-xl-7 col-lg-12 order-md-last order-sm-last order-last map-left">
+    <div class="col-xl-12 col-lg-12 order-md-last order-sm-last order-last map-left">
 
       <div class="row align-items-center mb-4">
         <div class="col-md-6 col">
@@ -12,8 +12,9 @@
 
         <div class="col-md-6 col-auto">
           <div class="view-icons">
-            <a href="map-grid.html" class="grid-view"><i class="fa fa-th-large"></i></a>
-            <a href="map-list.html" class="list-view active"><i class="fa fa-bars"></i></a>
+            <a class="grid-view" (click)="go()"><i class="fa fa-th-large"></i></a>
+            <!-- <a routerLink="['doctorview']" class="list-view active"><i class="fa fa-bars"></i></a> -->
+            <a class="list-view active" (click)="gotodoc()"><i class="fa fa-bars"></i></a>
           </div>
           <div class="sort-by d-sm-block d-none">
             <span class="sortby-fliter">
@@ -394,11 +395,8 @@
     </div>
         </div>
         <!-- /content-left-->
-        <div class="col-xl-5 col-lg-12 map-right">
-            <img src="../../assets/images/maps/googlemap.jpg" class="img-fluid">
-            <!-- map-->
-        </div>
-        <!-- /map-right-->
+
+
     </div>
     <!-- /row-->
 

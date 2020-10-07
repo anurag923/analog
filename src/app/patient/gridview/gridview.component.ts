@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+
 @Component({
-  selector: 'app-doctorview',
-  templateUrl: './doctorview.component.html',
-  styleUrls: ['./doctorview.component.css']
+  selector: 'app-gridview',
+  templateUrl: './gridview.component.html',
+  styleUrls: ['./gridview.component.css']
 })
-export class DoctorviewComponent implements OnInit {
+export class GridviewComponent implements OnInit {
 
   constructor(private route:Router) { }
 
