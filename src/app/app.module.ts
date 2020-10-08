@@ -42,7 +42,8 @@ import { DoctorsidebarComponent } from './doctor/doctorsidebar/doctorsidebar.com
 import { LoginComponent } from 'src/app/auth/login/login.component';
 import { SignupComponent } from 'src/app/auth/signup/signup.component';
 import { OtpComponent } from './auth/otp/otp.component';
-import { GridviewComponent } from './patient/gridview/gridview.component'
+import { GridviewComponent } from './patient/gridview/gridview.component';
+import { VideocallingComponent } from './videocalling/videocalling.component'
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { GridviewComponent } from './patient/gridview/gridview.component'
     LoginComponent,
     SignupComponent,
     OtpComponent,
-    GridviewComponent
+    GridviewComponent,
+    VideocallingComponent
   ],
   imports: [
     BrowserModule,
