@@ -454,4 +454,89 @@
 
   </div>
 
+
+  <!-- modal for calling modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#voice_call">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="voice_call" tabindex="-1" aria-labelledby="voice_call" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-blue">
+        <h3 class="modal-title text-white mb-0" id="exampleModalLabel">Voice Call</h3>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Outgoing Call -->
+        <div class="call-box incoming-box">
+          <div class="call-wrapper">
+            <div class="call-inner">
+              <div class="call-user">
+                <img alt="User Image" src="../../assets/images/patients/patient.jpg" class="call-avatar">
+                <h4>Richard Wilson</h4>
+                <span>Connecting...</span>
+              </div>
+              <div class="call-items">
+                <a href="javascript:void(0);" class="btn call-item call-end" data-dismiss="modal" aria-label="Close"><i class="material-icons">call_end</i></a>
+                <a routerLink="/voicecall" class="btn call-item call-start"><i class="material-icons">call</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Outgoing Call -->
+
+      </div>
+
+    </div>
+  </div>
+</div><!--VOICECALL-->
+
+
+<!--video call-->
+  <!-- Modal -->
+<div class="modal fade" id="video_call" tabindex="-1" aria-labelledby="video_call" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-blue">
+        <h3 class="modal-title text-white mb-0" id="exampleModalLabel">Video Call</h3>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Outgoing Call -->
+        <div class="call-box incoming-box">
+          <div class="call-wrapper">
+            <div class="call-inner">
+              <div class="call-user">
+                <img alt="User Image" src="../../assets/images/patients/patient.jpg" class="call-avatar">
+                <h4>Richard Wilson</h4>
+                <span>Connecting...</span>
+              </div>
+              <div class="call-items">
+                <a href="javascript:void(0);" class="btn call-item call-end" data-dismiss="modal" aria-label="Close"><i class="material-icons">call_end</i></a>
+                <a routerLink="/videocalling" class="btn call-item call-start"><i class="material-icons">call</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Outgoing Call -->
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--video call-->
+
 </div>

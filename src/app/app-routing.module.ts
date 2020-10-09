@@ -31,6 +31,8 @@ import { LoginComponent } from 'src/app/auth/login/login.component';
 import { SignupComponent } from 'src/app/auth/signup/signup.component';
 import { OtpComponent } from 'src/app/auth/otp/otp.component';
 import { GridviewComponent } from './patient/gridview/gridview.component'
+import { VoicecallComponent } from './voicecall/voicecall.component';
+import { VideocallingComponent } from './videocalling/videocalling.component';
 const routes: Routes = [
 
            {
@@ -45,6 +47,12 @@ const routes: Routes = [
           },
           {
             path:'otp', component:OtpComponent
+          },
+          {
+            path:'voicecall', component:VoicecallComponent
+          },
+          {
+            path:'videocalling', component:VideocallingComponent
           },
             {
               path:'patient/gridview', component:GridviewComponent

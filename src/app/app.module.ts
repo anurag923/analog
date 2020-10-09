@@ -43,7 +43,8 @@ import { LoginComponent } from 'src/app/auth/login/login.component';
 import { SignupComponent } from 'src/app/auth/signup/signup.component';
 import { OtpComponent } from './auth/otp/otp.component';
 import { GridviewComponent } from './patient/gridview/gridview.component';
-import { VideocallingComponent } from './videocalling/videocalling.component'
+import { VideocallingComponent } from './videocalling/videocalling.component';
+import { VoicecallComponent } from './voicecall/voicecall.component'
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { VideocallingComponent } from './videocalling/videocalling.component'
     SignupComponent,
     OtpComponent,
     GridviewComponent,
-    VideocallingComponent
+    VideocallingComponent,
+    VoicecallComponent
   ],
   imports: [
     BrowserModule,
