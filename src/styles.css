@@ -3732,10 +3732,10 @@ html.menu-opened body {
     width: 14.28%;
 }
 .time-slot li .timing {
-    background-color: #e9e9e9;
+    background-color: #15558d;
     border: 1px solid #e9e9e9;
     border-radius: 3px;
-    color: #757575;
+    color: #777;
     display: block;
     font-size: 14px;
     margin-bottom: 10px;
@@ -3744,7 +3744,8 @@ html.menu-opened body {
 	position: relative;
 }
 .time-slot li .timing:hover {
-    background-color: #fff;
+    background-color: #15558d;
+    color:#000;
 }
 .time-slot li .timing:last-child {
 	margin-bottom: 0;
