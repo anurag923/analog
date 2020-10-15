@@ -17,17 +17,17 @@ node(){
      }
 
      stage('Package Build') {
-        sh "tar -zcvf bundle.tar.gz dist/NovitaHealthTech/*"
+        sh "tar -zcvf bundle.zip dist/NovitaHealthTech/*"
      }
 
      stage('Artifacts Creation') {
-        fingerprint 'bundle.tar.gz'
-        archiveArtifacts 'bundle.tar.gz'
+        fingerprint 'bundle.zip'
+        archiveArtifacts 'bundle.zip'
         echo "Artifacts created"
      }
 
      stage('Stash changes') {
-        stash allowEmpty: true, includes: 'bundle.tar.gz', name: 'bundleArtifacts'
+        stash allowEmpty: true, includes: 'bundle.zip', name: 'bundleArtifacts'
      }
 }
 
@@ -37,6 +37,6 @@ node('novita') {
     echo 'Artifacts copied'
 
     echo 'Copy'
-    sh "yes | sudo cp -R bundle.tar.gz /var/www/html && cd /var/www/html && sudo tar -xvf bundle.tar.gz && sudo mv /var/www/html/dist/NovitaHealthTech/* ./ "
+    sh "yes | sudo cp -R bundle.zip /var/www/html && cd /var/www/html && sudo tar -xvf bundle.zip && sudo mv /var/www/html/dist/NovitaHealthTech/* ./ "
     echo 'Copy completed'
 }
