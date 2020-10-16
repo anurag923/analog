@@ -45,7 +45,14 @@ import { OtpComponent } from './auth/otp/otp.component';
 import { GridviewComponent } from './patient/gridview/gridview.component';
 import { VideocallingComponent } from './videocalling/videocalling.component';
 import { VoicecallComponent } from './voicecall/voicecall.component';
+import { PharmacyhomeComponent } from './pharmacy/pharmacyhome/pharmacyhome.component';
 import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService } from '@syncfusion/ej2-angular-schedule'
+import { PharmacyDetailsComponent } from './pharmacy/pharmacy-details/pharmacy-details.component';
+import { PharmacysearchComponent } from './pharmacy/pharmacysearch/pharmacysearch.component';
+import { ProductallComponent } from './pharmacy/productall/productall.component';
+import { ProductviewComponent } from './pharmacy/productview/productview.component';
+import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
+import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +97,14 @@ import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWe
     OtpComponent,
     GridviewComponent,
     VideocallingComponent,
-    VoicecallComponent
+    VoicecallComponent,
+    PharmacyhomeComponent,
+    PharmacyDetailsComponent,
+    PharmacysearchComponent,
+    ProductallComponent,
+    ProductviewComponent,
+    AddtocartComponent,
+    PaymentsuccessComponent
   ],
   imports: [
     BrowserModule,

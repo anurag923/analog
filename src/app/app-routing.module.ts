@@ -33,6 +33,13 @@ import { OtpComponent } from 'src/app/auth/otp/otp.component';
 import { GridviewComponent } from './patient/gridview/gridview.component'
 import { VoicecallComponent } from './voicecall/voicecall.component';
 import { VideocallingComponent } from './videocalling/videocalling.component';
+import { PharmacyhomeComponent } from './pharmacy/pharmacyhome/pharmacyhome.component';
+import { PharmacyDetailsComponent} from './pharmacy/pharmacy-details/pharmacy-details.component';
+import { PharmacysearchComponent} from './pharmacy/pharmacysearch/pharmacysearch.component';
+import { ProductallComponent } from './pharmacy/productall/productall.component';
+import { ProductviewComponent } from './pharmacy/productview/productview.component';
+import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
+import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component'
 const routes: Routes = [
 
            {
@@ -107,7 +114,27 @@ const routes: Routes = [
             path:'patient/changepassword', component:ChangepasswordComponent
           },
 
-
+          {
+            path:'pharmacy/pharmacyhome', component:PharmacyhomeComponent
+          },
+          {
+            path:'pharmacy/pharmacy-details', component:PharmacyDetailsComponent
+          },
+          {
+            path:'pharmacy/pharmacysearch', component:PharmacysearchComponent
+          },
+          {
+            path:'pharmacy/productall', component:ProductallComponent
+          },
+          {
+            path:'pharmacy/productview', component:ProductviewComponent
+          },
+          {
+            path:'pharmacy/addtocart', component:AddtocartComponent
+          },
+          {
+            path:'pharmacy/paymentsuccess', component:PaymentsuccessComponent
+          },
 
 
 

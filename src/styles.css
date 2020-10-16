@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.css";
-
 @import "../node_modules/@syncfusion/ej2-material-theme/styles/material.css";
 html, body { height: 100%; }
 .breadcrumb-bar {
@@ -3223,7 +3222,7 @@ html.menu-opened body {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 10px 18px;
+    padding: 10px 14px;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
