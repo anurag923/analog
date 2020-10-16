@@ -44,7 +44,8 @@ import { SignupComponent } from 'src/app/auth/signup/signup.component';
 import { OtpComponent } from './auth/otp/otp.component';
 import { GridviewComponent } from './patient/gridview/gridview.component';
 import { VideocallingComponent } from './videocalling/videocalling.component';
-import { VoicecallComponent } from './voicecall/voicecall.component'
+import { VoicecallComponent } from './voicecall/voicecall.component';
+import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService } from '@syncfusion/ej2-angular-schedule'
 
 @NgModule({
   declarations: [
@@ -96,9 +97,10 @@ import { VoicecallComponent } from './voicecall/voicecall.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
+    ScheduleModule, RecurrenceEditorModule,
 
 ],
-  providers: [],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
