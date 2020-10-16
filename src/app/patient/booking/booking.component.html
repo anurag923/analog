@@ -44,184 +44,236 @@
             </div>
           </div>
         </div>
-       <!-- <div class="row">
+       <div class="row">
           <div class="col-12 col-sm-4 col-md-6">
             <h4 class="mb-1">11 November 2019</h4>
             <p class="text-muted">Monday</p>
           </div>
           <div class="col-12 col-sm-8 col-md-6 text-sm-right">
             <div class="bookingrange btn btn-white btn-sm mb-3">
-              <i class="far fa-calendar-alt mr-2"></i>
-              <span>September 5, 2020 - September 11, 2020</span>
-              <i class="fas fa-chevron-down ml-2"></i>
-            </div>
-          </div>
-                      </div>
-         Schedule Widget
-        <div class="card booking-schedule schedule-widget">
-
-          Schedule Header
-          <div class="schedule-header">
-            <div class="row">
-              <div class="col-md-12">
-
-
-                <div class="day-slot">
-                  <ul>
-                    <li class="left-arrow">
-                      <a href="#">
-                        <i class="fa fa-chevron-left"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span>Mon</span>
-                      <span class="slot-date">11 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Tue</span>
-                      <span class="slot-date">12 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Wed</span>
-                      <span class="slot-date">13 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Thu</span>
-                      <span class="slot-date">14 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Fri</span>
-                      <span class="slot-date">15 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Sat</span>
-                      <span class="slot-date">16 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li>
-                      <span>Sun</span>
-                      <span class="slot-date">17 Nov <small class="slot-year">2019</small></span>
-                    </li>
-                    <li class="right-arrow">
-                      <a href="#">
-                        <i class="fa fa-chevron-right"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-
+              <div class="form-group">
+                <input type="date" class="form-control" id="email"  placeholder="Enter email" name="email">
               </div>
             </div>
           </div>
+     </div>
 
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
 
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
 
-
-          <div class="schedule-cont">
-            <div class="row">
-              <div class="col-md-12">
-
-
-                <div class="time-slot">
-                  <ul class="clearfix">
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="timing btn1 inactive1">
-                        <span>9:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>10:00</span> <span>AM</span>
-                      </a>
-                      <a class="timing btn1 inactive1">
-                        <span>11:00</span> <span>AM</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-
-              </div>
-            </div>
           </div>
 
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+        <div class="clinic-booking">
+
+          <a class="apt-btn" [routerLink]="['/patient/checkout']">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
 
         </div>
-         /Schedule Widget -->
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
 
-
-
-        <ejs-schedule width=100% height=500></ejs-schedule>
-
-         <!-- Submit Section -->
-         <div class="submit-section proceed-btn text-right mt-5">
-          <a href="" [routerLink]="['/patient/checkout']" class="btn btn-primary submit-btn">Proceed to Pay</a>
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
         </div>
-        <!-- /Submit Section -->
+        <div class="clinic-booking">
+
+          <a class="apt-btn" [routerLink]="['/patient/checkout']">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+        <div class="clinic-booking">
+
+          <a class="apt-btn" [routerLink]="['/patient/checkout']">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+        <div class="clinic-booking">
+
+          <a class="apt-btn" [routerLink]="['/patient/checkout']">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+        <div class="clinic-booking">
+
+          <a class="apt-btn" [routerLink]="['/patient/checkout']">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+
+
+
 
       </div>
     </div>

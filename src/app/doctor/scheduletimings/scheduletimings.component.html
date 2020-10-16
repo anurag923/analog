@@ -32,178 +32,261 @@
       <div class="col-md-7 col-lg-8 col-xl-9">
 
         <div class="row">
-          <div class="col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                <h4 class="card-title">Schedule Timings</h4>
-                  <a class="edit-link btn btn-outline-primary" data-toggle="modal" href="#edit_time_slot"><i class="fa fa-edit mr-1"></i>Edit</a>
-                </div>
-                <div class="profile-box">
-                  <div class="row">
 
-           <!--       <div class="col-lg-4">
-                      <div class="form-group">
-                        <label>Timing Slot Duration</label>
-                        <select class="select form-control select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                          <option>-</option>
-                          <option>15 mins</option>
-                          <option selected="selected" data-select2-id="3">30 mins</option>
-                          <option>45 mins</option>
-                          <option>1 Hour</option>
-                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-58ih-container"><span class="select2-selection__rendered" id="select2-58ih-container" role="textbox" aria-readonly="true" title="30 mins">30 mins</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                      </div>
-                    </div>-->
+<div class="content" style="min-height: 267.6px;width:100%;">
+  <div class="container">
 
-              <!--   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="card schedule-widget mb-0">
+    <div class="row">
+      <div class="col-12">
 
-
-                        <div class="schedule-header">
-
-
-                          <div class="schedule-nav">
-                            <ul class="nav nav-tabs nav-justified">
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_sunday">Sunday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#slot_monday">Monday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_tuesday">Tuesday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_wednesday">Wednesday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_thursday">Thursday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_friday">Friday</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#slot_saturday">Saturday</a>
-                              </li>
-                            </ul>
-                          </div>
-
-
-                        </div>
-
-
-                        <div class="tab-content schedule-cont">
-
-
-                          <div id="slot_sunday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-                          <div id="slot_monday" class="tab-pane fade show active">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#edit_time_slot"><i class="fa fa-edit mr-1"></i>Edit</a>
-                            </h4>
-
-
-                            <div class="doc-times">
-                              <div class="doc-slot-list">
-                                8:00 pm - 11:30 pm
-                                <a href="javascript:void(0)" class="delete_schedule">
-                                  <i class="fa fa-times"></i>
-                                </a>
-                              </div>
-                              <div class="doc-slot-list">
-                                11:30 pm - 1:30 pm
-                                <a href="javascript:void(0)" class="delete_schedule">
-                                  <i class="fa fa-times"></i>
-                                </a>
-                              </div>
-                              <div class="doc-slot-list">
-                                3:00 pm - 5:00 pm
-                                <a href="javascript:void(0)" class="delete_schedule">
-                                  <i class="fa fa-times"></i>
-                                </a>
-                              </div>
-                              <div class="doc-slot-list">
-                                6:00 pm - 11:00 pm
-                                <a href="javascript:void(0)" class="delete_schedule">
-                                  <i class="fa fa-times"></i>
-                                </a>
-                              </div>
-                            </div>
-
-
-                          </div>
-
-
-
-                          <div id="slot_tuesday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-                          <div id="slot_wednesday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-                          <div id="slot_thursday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-
-                          <div id="slot_friday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-
-                          <div id="slot_saturday" class="tab-pane fade">
-                            <h4 class="card-title d-flex justify-content-between">
-                              <span>Time Slots</span>
-                              <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
-                            </h4>
-                            <p class="text-muted mb-0">Not Available</p>
-                          </div>
-
-
-                        </div>
-                        Schedule Content
-
-                      </div>
-                    </div>-->
-
-                    <ejs-schedule width="100%" height="500"></ejs-schedule>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+                <div class="booking-doc-info">
+                  <a [routerLink]="['/patient/doctorprofile']" class="booking-doc-img">
+                    <img src="../../assets/images/doctors/doctor-02.jpg" alt="User Image">
+                  </a>
+                  <div class="booking-info">
+                    <h4><a [routerLink]="['/patient/doctorprofile']">Dr. Darren Elder</a></h4>
+                    <div class="rating">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="d-inline-block average-rating">35</span>
+                    </div>
+                    <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
                   </div>
                 </div>
+
+                <div class="button-add">
+                  <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
+                </div>
+          </div>
+          </div>
+        </div>
+       <div class="row">
+          <div class="col-12 col-sm-4 col-md-6">
+            <h4 class="mb-1">11 November 2019</h4>
+            <p class="text-muted">Monday</p>
+          </div>
+          <div class="col-12 col-sm-8 col-md-6 text-sm-right">
+            <div class="bookingrange btn btn-white btn-sm mb-3">
+              <div class="form-group">
+                <input type="date" class="form-control" id="email"  placeholder="Enter email" name="email">
               </div>
             </div>
           </div>
+     </div>
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+ <!-- Doctor Widget -->
+ <div class="card">
+  <div class="card-body">
+    <div class="doctor-widget">
+      <div class="doc-info-left">
+        <div class="doctor-img">
+          <a [routerLink]="['/patient/doctorprofile']">
+            <img src="../../assets/images/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+          </a>
+        </div>
+        <div class="doc-info-cont">
+          <h4 class="doc-name"><a [routerLink]="['/patient/doctorprofile']">SLOT1 BOOKING</a></h4>
+          <p class="doc-speciality">9:00AM-9:30AM</p>
+          <p class="doc-department"><img src="../../assets/images/Specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+
+          <div class="clinic-details">
+            <p class="doc-location"><i class="fa fa-home"></i> Yashoda Clinic, Hyderabad</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="doc-info-right">
+        <div class="clini-infos">
+          <ul>
+
+            <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+            <li><i class="fa fa-money-bill"></i> $100 - $400 <i class="fa fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Doctor Widget -->
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
         </div>
 
 
@@ -220,7 +303,7 @@
 <!--edit time slot modal here-->
 
   <!-- Edit Time Slot Modal -->
-  <div class="modal fade custom-modal modal-edit" id="edit_time_slot">
+  <div class="modal fade custom-modal modal-edit" id="">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -342,11 +425,142 @@
   </div>
   <!-- /Edit Time Slot Modal -->
 
-  <a class="edit-link" data-toggle="modal" href="#add_time_slot"><i class="fa fa-plus-circle"></i> Add Slot</a>
+
 
 
 
 <!--edit time slot modal here-->
+
+
+<!--video call-->
+  <!-- Modal -->
+  <div class="modal fade" id="add_time_slot" tabindex="-1" aria-labelledby="add_time_slot" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-blue">
+          <h3 class="modal-title text-white mb-0" id="exampleModalLabel">Add Slot</h3>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="hours-info">
+              <div class="row form-row hours-cont">
+                <div class="col-12 col-md-10">
+                  <div class="row form-row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>Start Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option selected>12.00 am</option>
+                          <option>12.30 am</option>
+                          <option>1.00 am</option>
+                          <option>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>End Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option>12.00 am</option>
+                          <option selected>12.30 am</option>
+                          <option>1.00 am</option>
+                          <option>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row form-row hours-cont">
+                <div class="col-12 col-md-10">
+                  <div class="row form-row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>Start Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option>12.00 am</option>
+                          <option selected>12.30 am</option>
+                          <option>1.00 am</option>
+                          <option>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>End Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option>12.00 am</option>
+                          <option>12.30 am</option>
+                          <option selected>1.00 am</option>
+                          <option>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2"><label class="d-md-block d-sm-none d-none">&nbsp;</label><a href="#" class="btn btn-danger trash"><i class="far fa-trash-alt"></i></a></div>
+              </div>
+
+              <div class="row form-row hours-cont">
+                <div class="col-12 col-md-10">
+                  <div class="row form-row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>Start Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option>12.00 am</option>
+                          <option>12.30 am</option>
+                          <option selected>1.00 am</option>
+                          <option>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>End Time</label>
+                        <select class="form-control">
+                          <option>-</option>
+                          <option>12.00 am</option>
+                          <option>12.30 am</option>
+                          <option>1.00 am</option>
+                          <option selected>1.30 am</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2"><label class="d-md-block d-sm-none d-none">&nbsp;</label><a href="#" class="btn btn-danger trash"><i class="far fa-trash-alt"></i></a></div>
+              </div>
+
+            </div>
+
+            <div class="add-more mb-3">
+              <a href="javascript:void(0);" class="add-hours"><i class="fa fa-plus-circle"></i> Add More</a>
+            </div>
+            <div class="submit-section text-center">
+              <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--video call-->
+
 
 
 

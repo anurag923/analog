@@ -54,6 +54,7 @@ import { ProductviewComponent } from './pharmacy/productview/productview.compone
 import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
 import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -104,7 +105,8 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
     ProductallComponent,
     ProductviewComponent,
     AddtocartComponent,
-    PaymentsuccessComponent
+    PaymentsuccessComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -112,6 +114,7 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
     BrowserAnimationsModule,
     CarouselModule,
     ScheduleModule, RecurrenceEditorModule,
+
 
 ],
   providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService],
