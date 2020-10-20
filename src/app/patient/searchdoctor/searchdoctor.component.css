@@ -1,0 +1,14 @@
+.custom_check .checkmark::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 0;
+  color: #0154a2;
+  font-size: 11px;
+}
+.custom_check input:checked ~ .checkmark:after {
+  display: block;
+}

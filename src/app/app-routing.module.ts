@@ -39,7 +39,9 @@ import { PharmacysearchComponent} from './pharmacy/pharmacysearch/pharmacysearch
 import { ProductallComponent } from './pharmacy/productall/productall.component';
 import { ProductviewComponent } from './pharmacy/productview/productview.component';
 import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
-import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component'
+import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component';
+import { LabsComponent } from './lab/labs/labs.component';
+import { LablistComponent } from './lab/lablist/lablist.component';
 const routes: Routes = [
 
            {
@@ -135,16 +137,19 @@ const routes: Routes = [
           {
             path:'pharmacy/paymentsuccess', component:PaymentsuccessComponent
           },
-
-
-
-
-
-
-
+          {
+            path:'lab/labs', component:LabsComponent
+          },
           {
             path:'doctor/doctorregister', component:DoctorregisterComponent
           },
+          {
+            path:'doctor/doctorregister', component:DoctorregisterComponent
+          },
+          {
+            path:'lab/lablist', component:LablistComponent
+          },
+
 
                     {
                       path:'doctor/appointments', component:AppointmentsComponent

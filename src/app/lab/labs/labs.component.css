@@ -1,0 +1,140 @@
+.banner-inside
+{
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.banner-txt
+{
+    margin-bottom:30px;
+}
+.banner-txt h1
+{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.banner-txt p
+{
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.search-form .search-area
+{
+    flex: 0 0 240px;
+    margin-right: 12px;
+    position: relative;
+    width: 240px;
+}
+.search-area .form-control
+{
+    background: #fff url(src/assets/images/banner-section/location.png) no-repeat 10px center;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+    border-radius: 5px;
+    padding-left: 35px;
+}
+.form-control
+{
+color: #333;
+font-size: 15px;
+min-height: 46px;
+padding: 6px 15px;
+}
+.search-area .form-text
+{
+    color: #757575;
+    font-size: 13px
+}
+.search-form .search-category
+{
+
+    flex: 0 0 490px;
+    margin-right: 12px;
+    position: relative;
+    width: 400px;
+
+}
+.search-category .form-control
+{
+    background: #fff url(src/assets/images/banner-section/search.png) no-repeat 10px center;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+    border-radius: 5px;
+    padding-left: 35px;
+}
+.search-form .search-btn {
+        width: 46px;
+        -ms-flex: 0 0 46px;
+        flex: 0 0 46px;
+        height: 46px;
+
+}
+.search-category .form-text
+{
+    color: #757575;
+    font-size: 13px
+}
+
+
+.view-btn {
+  color: #0154a2;
+  font-size: 13px;
+  border: 2px solid #0154a2;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+padding: 6px;
+}
+.view-btn:hover, .view-btn:focus {
+background-color: #0154a2;
+color: #fff;
+}
+.book-btn {
+background-color: #0154a2;
+  border: 2px solid #0154a2;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+padding: 6px;
+
+}
+.book-btn:hover, .book-btn:focus {
+background-color: #01cae4;
+border-color: #01cae4;
+color: #fff;
+}
+.section-doctor .profile-widget {
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+.bg-ash1
+{
+  background-color:#f6f6f9;
+}
+.a-link-clr:hover
+{
+  text-decoration: none;
+}
+.cls-radius
+{
+  border-radius:25px;
+}
+.img-cont h6
+{
+  word-wrap:wrap;
+  overflow:hidden;
+}
+.img-book .button-book
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+}
