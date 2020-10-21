@@ -42,6 +42,8 @@ import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
 import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component';
 import { LabsComponent } from './lab/labs/labs.component';
 import { LablistComponent } from './lab/lablist/lablist.component';
+import { LabdescriptionComponent } from './lab/labdescription/labdescription.component';
+import { BooktestComponent } from './lab/booktest/booktest.component';
 const routes: Routes = [
 
            {
@@ -148,6 +150,12 @@ const routes: Routes = [
           },
           {
             path:'lab/lablist', component:LablistComponent
+          },
+          {
+            path:'lab/booktest', component:BooktestComponent
+          },
+          {
+            path:'lab/labdescription', component:LabdescriptionComponent
           },
 
 

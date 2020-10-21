@@ -55,6 +55,7 @@ import { AddtocartComponent } from './pharmacy/addtocart/addtocart.component';
 import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsuccess.component';
 import { LabsComponent } from "./lab/labs/labs.component";
 import { LablistComponent } from './lab/lablist/lablist.component';
+import { BooktestComponent } from './lab/booktest/booktest.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +109,8 @@ import { LablistComponent } from './lab/lablist/lablist.component';
     AddtocartComponent,
     PaymentsuccessComponent,
     LabsComponent,
-    LablistComponent
+    LablistComponent,
+    BooktestComponent
   ],
   imports: [
     BrowserModule,

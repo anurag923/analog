@@ -1,0 +1,29 @@
+
+.sidebar-contact {
+  position: fixed;
+    top: 15%;
+    right: 0;
+    transform: translateY(-50%);
+    right: 0px;
+    height: auto;
+    padding:5px;
+    background: #005594;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.cart-sect span
+{
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}

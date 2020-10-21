@@ -7947,3 +7947,12 @@ outline: 0;
 {
   filter:blur(-1px) !important;
 }
+.theiaStickySidebar
+{
+  padding-top: 0px;
+  padding-bottom: 1px;
+  position: static;
+  transform: none;
+  top: 0px;
+  left: 30px;
+}
