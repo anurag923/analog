@@ -1,0 +1,40 @@
+.clr-smll
+{
+  color:#005594;
+  font-size:13px;
+}
+.gpd
+{
+  padding: 10px 0.75rem 0 0.75rem !important;
+  margin-top:-14px;
+}
+.smalltxt
+{
+  background-color: #fff;
+    color: #959595;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 6px auto auto 8px;
+    padding: 0 7px;
+    position:relative;
+}
+.box-hide
+{
+  color: #fff;
+  padding: 20px;
+   display: none;
+  margin-top: 20px;
+}
+.paypal
+{
+  background:green;
+}
+.upi
+{
+  background:red;
+}
+.mobilewlt
+{
+  background:blue;
+}

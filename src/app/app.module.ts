@@ -56,11 +56,17 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
 import { LabsComponent } from "./lab/labs/labs.component";
 import { LablistComponent } from './lab/lablist/lablist.component';
 import { BooktestComponent } from './lab/booktest/booktest.component';
+<<<<<<< HEAD
 import { NovitaService } from './services/novita.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UniquePipe } from './unique.pipe';
 import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { LabdescriptionComponent } from './lab/labdescription/labdescription.component';
+=======
+import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
+import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
+
+>>>>>>> 2ad47b6dd672da8628524d337091a8ba98e7967c
 @NgModule({
   declarations: [
     AppComponent,
@@ -115,8 +121,13 @@ import { LabdescriptionComponent } from './lab/labdescription/labdescription.com
     LabsComponent,
     LablistComponent,
     BooktestComponent,
+<<<<<<< HEAD
     UniquePipe,
     LabdescriptionComponent
+=======
+    LabcheckoutComponent,
+    PaysuccessComponent
+>>>>>>> 2ad47b6dd672da8628524d337091a8ba98e7967c
   ],
   imports: [
     BrowserModule,
