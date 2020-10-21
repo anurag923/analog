@@ -187,9 +187,14 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <a class="nav-link" href="#"> <img src="../../assets/images/header-icons/phone-icon.png" class="phn-sz"> +91 40-2536589</a>
-
+          
+          <div *ngIf = "userDisplayName;else notloggedin">
+            {{userDisplayName}} <a (click)="logout()" style="cursor:pointer;">logout</a>
+          </div>
+          <ng-template #notloggedin>
           <a class="nav-link btn btn-outline-primary font-weight-normal" [routerLink]="['login']">LOGIN</a>
           <a class="nav-link btn btn-outline-primary font-weight-normal" [routerLink]="['signup']">SIGNUP</a>
+        </ng-template>
         </form>
       </div>
     </nav>

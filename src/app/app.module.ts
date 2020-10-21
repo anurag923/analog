@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -56,17 +57,16 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
 import { LabsComponent } from "./lab/labs/labs.component";
 import { LablistComponent } from './lab/lablist/lablist.component';
 import { BooktestComponent } from './lab/booktest/booktest.component';
-<<<<<<< HEAD
 import { NovitaService } from './services/novita.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UniquePipe } from './unique.pipe';
 import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { LabdescriptionComponent } from './lab/labdescription/labdescription.component';
-=======
 import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
 import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
+import { AuthGuardService } from './auth-guard.service';
 
->>>>>>> 2ad47b6dd672da8628524d337091a8ba98e7967c
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -121,13 +121,11 @@ import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
     LabsComponent,
     LablistComponent,
     BooktestComponent,
-<<<<<<< HEAD
     UniquePipe,
-    LabdescriptionComponent
-=======
+    LabdescriptionComponent,
     LabcheckoutComponent,
     PaysuccessComponent
->>>>>>> 2ad47b6dd672da8628524d337091a8ba98e7967c
+
   ],
   imports: [
     BrowserModule,
@@ -136,13 +134,12 @@ import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
     CarouselModule,
     ScheduleModule, RecurrenceEditorModule,
     HttpClientModule,
+    FormsModule,
     BackButtonDisableModule.forRoot({
       preserveScrollPosition: true
     })
-
-
 ],
-  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService, NovitaService],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService, NovitaService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

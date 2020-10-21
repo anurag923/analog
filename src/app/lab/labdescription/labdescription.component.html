@@ -99,23 +99,29 @@
           <!-- Overview Content -->
           <div role="tabpanel" id="doc_overview" class="tab-pane fade show active">
             <div class="row">
-<<<<<<< HEAD
-              <div class="col-md-4" *ngFor = "let i of individualdiagnostic">
-                <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">{{i.test_name}}</h5>
-                    <h2>{{i.new_price}}<b class="text-lg strike" style="text-decoration: line-through;">{{i.old_price}}</b></h2>
-                    <a href="#" class="btn btn-primary">Details</a>
-                  </div>
-=======
+              
               <div class="col-md-12">
 
                 <!-- About Details -->
                 <div class="widget about-widget bg-ash1">
                   <h4 class="widget-title">All Tests</h4>
                   <div class="d-flex flex-wrap flex-gap  align-items-center">
-                      <div class="block1">
+                      <div class="block1" *ngFor = "let i of individualdiagnostic">
+                        <div class="card mb-0">
+                          <div class='card-body'>
+                            <h6 class="font-weight-bold">{{i.test_name}}</h6>
+                            <p class="small">{{i.discription}}</p>
+
+                            <div class="d-flex justify-content-between">
+                                <h6 class="clr-bl"><span>₹{{i.new_price}}</span></h6>
+                                <h6 class="clr-bl"><a routerLink = "/lab/booktest/{{i.lab.user.id}}/{{i.id}}" style="cursor: pointer;">ADD</a></h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -127,10 +133,11 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
 
-                      <div class="block1">
+
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -142,11 +149,12 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
 
 
-                      <div class="block1">
+
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -158,12 +166,9 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
-
-
-
-                      <div class="block1">
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -175,9 +180,10 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
-                      <div class="block1">
+
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -189,10 +195,10 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
 
-                      <div class="block1">
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -204,10 +210,10 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
 
-                      <div class="block1">
+                      <!-- <div class="block1">
                         <div class="card mb-0">
                           <div class='card-body'>
                             <h6 class="font-weight-bold">Complete Blood Count</h6>
@@ -219,22 +225,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-
-
-                      <div class="block1">
-                        <div class="card mb-0">
-                          <div class='card-body'>
-                            <h6 class="font-weight-bold">Complete Blood Count</h6>
-                            <p class="small">Known Complete Blood Structure</p>
-
-                            <div class="d-flex justify-content-between">
-                                <h6 class="clr-bl"><span>₹300</span></h6>
-                                <h6 class="clr-bl"><a href="#">ADD</a></h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </div> -->
 
 
 
@@ -252,11 +243,10 @@
 
                   </div>
 
->>>>>>> 2ad47b6dd672da8628524d337091a8ba98e7967c
                 </div>
-              </div>
-            </div>
-          </div>
+              
+            
+          
           <!-- /Overview Content -->
 
           <!-- Locations Content -->
