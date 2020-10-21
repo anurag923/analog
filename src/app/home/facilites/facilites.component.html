@@ -6,18 +6,18 @@
                             <h2>What are you looking for?</h2>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 mb-3">
+                            <div class="col-lg-3 mb-3" *ngFor = "let p of pharmacies">
                                 <div class="card text-center facility-card">
-                                    <img src="../../assets/images/facilites/consultdoctor.jpg" alt="" class="img-fluid">
+                                    <img src="http://3.14.150.254:8000{{p.image}}" alt="" class="img-fluid">
                                     <div class="doctor-book-card-content tile-card-content-1">
                                         <div>
-                                            <h4 class="card-title mb-3 fnt-12">Consult a Doctor</h4>
-                                            <a href="search.html" class="btn book-btn1 px-3 py-2 mt-3" tabindex="0"><span>Book Now </span></a>
+                                            <h4 class="card-title mb-3 fnt-12">{{p.name}}</h4>
+                                            <a routerLink="/pharmacy/pharmacy-details/{{p.user.id}}" class="btn book-btn1 px-3 py-2 mt-3" tabindex="0"><span>Details</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 mb-3">
+                            <!-- <div class="col-lg-3 mb-3">
                                 <div class="card text-center facility-card">
                                     <img src="../../assets/images/facilites/clinic.jpg" alt="" class="img-fluid">
                                     <div class="doctor-book-card-content tile-card-content-1">
@@ -27,8 +27,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 mb-3">
+                            </div> -->
+                            <!-- <div class="col-lg-3 mb-3">
                                 <div class="card text-center facility-card">
                                     <img src="../../assets/images/facilites/lab.jpg" alt="" class="img-fluid">
                                     <div class="doctor-book-card-content tile-card-content-1">
@@ -38,10 +38,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
-                            <div class="col-lg-3 mb-3">
+                            <!-- <div class="col-lg-3 mb-3">
                                 <div class="card text-center facility-card">
                                     <img src="../../assets/images/facilites/pharmacy.jpg" alt="" class="img-fluid">
                                     <div class="doctor-book-card-content tile-card-content-1">
@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

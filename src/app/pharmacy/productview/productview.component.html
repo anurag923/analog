@@ -29,10 +29,10 @@
             <div class="doctor-widget">
               <div class="doc-info-left">
                 <div class="doctor-img1">
-                    <img src="../../assets/images/pharmacy/pharmacydetails/product1.jpg" class="img-fluid" alt="User Image">
+                    <img src="http://3.14.150.254:8000{{individualProduct.item.image}}" class="img-fluid" alt="User Image">
                 </div>
                 <div class="doc-info-cont">
-                  <h4 class="doc-name mb-2">Benzaxapine Croplex</h4>
+                  <h4 class="doc-name mb-2">{{individualProduct.item.name}}</h4>
                   <p><span class="text-muted">Manufactured By </span> Hamdard (Wakf) Laboratories</p>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                   <div class="feature-product pt-4">
@@ -181,7 +181,7 @@
         <div class="card search-filter">
           <div class="card-body">
             <div class="clini-infos mt-0">
-              <h2>$19 <b class="text-lg strike">$45</b>  <span class="text-lg text-success"><b>10% off</b></span></h2>
+              <h2>{{individualProduct.new_price}}<b class="text-lg strike">{{individualProduct.old_price}}</b>  <span class="text-lg text-success"><b>{{individualProduct.offer}}</b></span></h2>
             </div>
             <span class="badge badge-primary">In stock</span>
             <div class="custom-increment pt-4">

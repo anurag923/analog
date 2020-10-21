@@ -122,7 +122,7 @@ const routes: Routes = [
             path:'pharmacy/pharmacyhome', component:PharmacyhomeComponent
           },
           {
-            path:'pharmacy/pharmacy-details', component:PharmacyDetailsComponent
+            path:'pharmacy/pharmacy-details/:id', component:PharmacyDetailsComponent
           },
           {
             path:'pharmacy/pharmacysearch', component:PharmacysearchComponent
@@ -131,7 +131,7 @@ const routes: Routes = [
             path:'pharmacy/productall', component:ProductallComponent
           },
           {
-            path:'pharmacy/productview', component:ProductviewComponent
+            path:'pharmacy/productview/:itemid/:pharmaid', component:ProductviewComponent
           },
           {
             path:'pharmacy/addtocart', component:AddtocartComponent
@@ -155,7 +155,7 @@ const routes: Routes = [
             path:'lab/booktest', component:BooktestComponent
           },
           {
-            path:'lab/labdescription', component:LabdescriptionComponent
+            path:'lab/labdescription/:diagnosticid', component:LabdescriptionComponent
           },
 
 

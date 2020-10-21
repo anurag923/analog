@@ -56,7 +56,11 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
 import { LabsComponent } from "./lab/labs/labs.component";
 import { LablistComponent } from './lab/lablist/lablist.component';
 import { BooktestComponent } from './lab/booktest/booktest.component';
-
+import { NovitaService } from './services/novita.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UniquePipe } from './unique.pipe';
+import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
+import { LabdescriptionComponent } from './lab/labdescription/labdescription.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -110,7 +114,9 @@ import { BooktestComponent } from './lab/booktest/booktest.component';
     PaymentsuccessComponent,
     LabsComponent,
     LablistComponent,
-    BooktestComponent
+    BooktestComponent,
+    UniquePipe,
+    LabdescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -118,10 +124,14 @@ import { BooktestComponent } from './lab/booktest/booktest.component';
     BrowserAnimationsModule,
     CarouselModule,
     ScheduleModule, RecurrenceEditorModule,
+    HttpClientModule,
+    BackButtonDisableModule.forRoot({
+      preserveScrollPosition: true
+    })
 
 
 ],
-  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService, NovitaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

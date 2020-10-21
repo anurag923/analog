@@ -107,11 +107,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
+          <div class="col-md-12 col-lg-4 col-xl-4 product-custom" *ngFor = "let dia of diagnostics">
             <div class="profile-widget">
               <div class="doc-img">
-                <a href="product-description.html" tabindex="-1">
-                  <img class="img-fluid" alt="Product image" src="../../assets/images/dignostics/dig2.jpg">
+                <a routerLink = "/lab/labdescription/{{dia.user.id}}" tabindex="-1">
+                  <img class="img-fluid" alt="Product image" src="http://3.14.150.254:8000{{dia.image}}">
                 </a>
                 <a href="javascript:void(0)" class="fav-btn" tabindex="-1">
                   <i class="far fa-bookmark"></i>
@@ -119,7 +119,7 @@
               </div>
               <div class="pro-content">
                 <h3 class="title pb-1">
-                  <a href="product-description.html" tabindex="-1">Vijaya Diagnostics</a>
+                  <a href="#" tabindex="-1">{{dia.name}}</a>
                 </h3>
 
                 <div class="rating d-flex justify-content-between">
@@ -133,7 +133,7 @@
                   </div>
 
                   <div class="p-loc">
-                     <p class="">Location: Gachibowli</p>
+                     <p class="">Location: {{dia.location.city}}</p>
                   </div>
                 </div>
 
@@ -144,13 +144,13 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink= "lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
 
           </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
+          <!-- <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
             <div class="profile-widget">
               <div class="doc-img">
                 <a href="product-description.html" tabindex="-1">
@@ -187,7 +187,93 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a [routerLink]="['lab/booktest']" class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest" class="btn btn-primary btn-block">Book Now</a>
+                  </div>
+                </div>
+              </div>
+
+          </div> -->
+          <!-- <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
+            <div class="profile-widget">
+              <div class="doc-img">
+                <a href="product-description.html" tabindex="-1">
+                  <img class="img-fluid" alt="Product image" src="../../assets/images/dignostics/dig2.jpg">
+                </a>
+                <a href="javascript:void(0)" class="fav-btn" tabindex="-1">
+                  <i class="far fa-bookmark"></i>
+                </a>
+              </div>
+              <div class="pro-content">
+                <h3 class="title pb-1">
+                  <a href="product-description.html" tabindex="-1">Vijaya Diagnostics</a>
+                </h3>
+
+                <div class="rating d-flex justify-content-between">
+                  <div class="rated">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="d-inline-block average-rating">(52)</span>
+                  </div>
+
+                  <div class="p-loc">
+                     <p class="">Location: Gachibowli</p>
+                  </div>
+                </div>
+
+              </div>
+
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <a href="#" class="btn btn-primary btn-block">View All Tests</a>
+                  </div>
+                  <div class="col-lg-6 text-right">
+                    <a href="#"  routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
+                  </div>
+                </div>
+              </div>
+
+          </div> -->
+          <!-- <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
+            <div class="profile-widget">
+              <div class="doc-img">
+                <a href="product-description.html" tabindex="-1">
+                  <img class="img-fluid" alt="Product image" src="../../assets/images/dignostics/dig2.jpg">
+                </a>
+                <a href="javascript:void(0)" class="fav-btn" tabindex="-1">
+                  <i class="far fa-bookmark"></i>
+                </a>
+              </div>
+              <div class="pro-content">
+                <h3 class="title pb-1">
+                  <a href="product-description.html" tabindex="-1">Vijaya Diagnostics</a>
+                </h3>
+
+                <div class="rating d-flex justify-content-between">
+                  <div class="rated">
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star filled"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="d-inline-block average-rating">(52)</span>
+                  </div>
+
+                  <div class="p-loc">
+                     <p class="">Location: Gachibowli</p>
+                  </div>
+                </div>
+
+              </div>
+
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <a href="#" class="btn btn-primary btn-block">View All Tests</a>
+                  </div>
+                  <div class="col-lg-6 text-right">
+                    <a  routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -230,93 +316,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
-            <div class="profile-widget">
-              <div class="doc-img">
-                <a href="product-description.html" tabindex="-1">
-                  <img class="img-fluid" alt="Product image" src="../../assets/images/dignostics/dig2.jpg">
-                </a>
-                <a href="javascript:void(0)" class="fav-btn" tabindex="-1">
-                  <i class="far fa-bookmark"></i>
-                </a>
-              </div>
-              <div class="pro-content">
-                <h3 class="title pb-1">
-                  <a href="product-description.html" tabindex="-1">Vijaya Diagnostics</a>
-                </h3>
-
-                <div class="rating d-flex justify-content-between">
-                  <div class="rated">
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star"></i>
-                    <span class="d-inline-block average-rating">(52)</span>
-                  </div>
-
-                  <div class="p-loc">
-                     <p class="">Location: Gachibowli</p>
-                  </div>
-                </div>
-
-              </div>
-
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <a href="#" class="btn btn-primary btn-block">View All Tests</a>
-                  </div>
-                  <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 product-custom">
-            <div class="profile-widget">
-              <div class="doc-img">
-                <a href="product-description.html" tabindex="-1">
-                  <img class="img-fluid" alt="Product image" src="../../assets/images/dignostics/dig2.jpg">
-                </a>
-                <a href="javascript:void(0)" class="fav-btn" tabindex="-1">
-                  <i class="far fa-bookmark"></i>
-                </a>
-              </div>
-              <div class="pro-content">
-                <h3 class="title pb-1">
-                  <a href="product-description.html" tabindex="-1">Vijaya Diagnostics</a>
-                </h3>
-
-                <div class="rating d-flex justify-content-between">
-                  <div class="rated">
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star filled"></i>
-                    <i class="fa fa-star"></i>
-                    <span class="d-inline-block average-rating">(52)</span>
-                  </div>
-
-                  <div class="p-loc">
-                     <p class="">Location: Gachibowli</p>
-                  </div>
-                </div>
-
-              </div>
-
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <a href="#" class="btn btn-primary btn-block">View All Tests</a>
-                  </div>
-                  <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a  routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -445,7 +445,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a  routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -488,7 +488,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -531,7 +531,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -574,7 +574,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a  routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -617,7 +617,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -660,7 +660,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -703,7 +703,7 @@
                     <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                    <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -747,12 +747,12 @@
                                   <a href="#" class="btn btn-primary btn-block">View All Tests</a>
                                 </div>
                                 <div class="col-lg-6 text-right">
-                                  <a href="#"  [routerLink]="['lab/booktest']"  class="btn btn-primary btn-block">Book Now</a>
+                                  <a routerLink="lab/booktest"  class="btn btn-primary btn-block">Book Now</a>
                                 </div>
                               </div>
                             </div>
 
-                        </div>
+                        </div> -->
 
                        </div>
                        <div class="col-md-12 text-center">

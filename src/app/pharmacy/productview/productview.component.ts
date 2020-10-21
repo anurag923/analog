@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NovitaService } from '../../services/novita.service';
 declare var $:any;
+
 @Component({
   selector: 'app-productview',
   templateUrl: './productview.component.html',
@@ -7,12 +10,13 @@ declare var $:any;
 })
 export class ProductviewComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private novitaservice:NovitaService, private route:ActivatedRoute) { }
+  individualProduct = null;
   ngOnInit(): void {
     //Increment Decrement Numberes
-	var quantitiy=0;
-  $('.quantity-right-plus').click(function(e){
+    this.getProduct(this.route.snapshot.paramMap.get('itemid'),this.route.snapshot.paramMap.get('pharmaid'));
+	  var quantitiy=0;
+    $('.quantity-right-plus').click(function(e){
        e.preventDefault();
        var quantity = parseInt($('#quantity').val());
            $('#quantity').val(quantity + 1);
@@ -25,7 +29,18 @@ export class ProductviewComponent implements OnInit {
              $('#quantity').val(quantity - 1);
            }
    });
+}
 
-  }
+getProduct(itemid,pharmaid): void {
+  this.novitaservice.getPharmaProduct(itemid,pharmaid)
+    .subscribe(
+      data => {
+        this.individualProduct = data;
+        console.log(data);
+      },
+      error => {
+        console.log(error);
+      });
+}
 
 }

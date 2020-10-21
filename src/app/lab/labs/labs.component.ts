@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { NovitaService } from '../../services/novita.service';
 
 @Component({
   selector: 'app-labs',
@@ -8,9 +9,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class LabsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private novitaservice:NovitaService) { }
+  diagnostics:any;
   ngOnInit(): void {
+    this.novitaservice.getAll_diagnostic().subscribe((response)=>{
+      console.log(response);
+      this.diagnostics = response
+    })
   }
 
     customOptions: OwlOptions = {
