@@ -44,6 +44,8 @@ import { LabsComponent } from './lab/labs/labs.component';
 import { LablistComponent } from './lab/lablist/lablist.component';
 import { LabdescriptionComponent } from './lab/labdescription/labdescription.component';
 import { BooktestComponent } from './lab/booktest/booktest.component';
+import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
+import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 const routes: Routes = [
 
            {
@@ -157,7 +159,12 @@ const routes: Routes = [
           {
             path:'lab/labdescription', component:LabdescriptionComponent
           },
-
+          {
+            path:'lab/labcheckout', component:LabcheckoutComponent
+          },
+          {
+            path:'lab/paysuccess', component:PaysuccessComponent
+          },
 
                     {
                       path:'doctor/appointments', component:AppointmentsComponent

@@ -56,6 +56,8 @@ import { PaymentsuccessComponent } from './pharmacy/paymentsuccess/paymentsucces
 import { LabsComponent } from "./lab/labs/labs.component";
 import { LablistComponent } from './lab/lablist/lablist.component';
 import { BooktestComponent } from './lab/booktest/booktest.component';
+import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
+import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +112,9 @@ import { BooktestComponent } from './lab/booktest/booktest.component';
     PaymentsuccessComponent,
     LabsComponent,
     LablistComponent,
-    BooktestComponent
+    BooktestComponent,
+    LabcheckoutComponent,
+    PaysuccessComponent
   ],
   imports: [
     BrowserModule,

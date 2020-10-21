@@ -26,3 +26,19 @@
   top: 0px;
   left: 20px;
 }
+.bg-ash1
+{
+  background-color:#f6f6f6;
+  padding:10px;
+}
+.clr-bl
+{
+  color:#005594;
+  font-weight:bold;
+  padding:10px 0;
+  border-top:1px solid #f6f6f6;
+}
+.block1
+{
+  margin:10px;
+}
