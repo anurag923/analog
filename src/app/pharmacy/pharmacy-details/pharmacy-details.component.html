@@ -43,7 +43,7 @@
               <div class="clinic-details">
                 <div class="clini-infos pt-3">
 
-                <p class="doc-location mb-2"><i class="fas fa-phone-volume mr-1"></i>7978383296</p>
+                <p class="doc-location mb-2"><i class="fas fa-phone-volume mr-1"></i>{{ind.pharma.title.phone}}</p>
                 <p class="doc-location mb-2 text-ellipse"><i class="fas fa-map-marker-alt mr-1"></i>{{ind.pharma.location.city}},{{ind.pharma.location.state}},{{ind.pharma.location.pin_no}},{{ind.pharma.location.country}} </p>
                 <p class="doc-location mb-2"><i class="fas fa-chevron-right mr-1"></i> Chemists, Surgical Equipment Dealer</p>
 
@@ -168,7 +168,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{i.item.name}}</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a routerLink = "/pharmacy/productview/{{i.item.id}}/{{i.pharma.user.id}}" class="btn btn-primary">details</a>
+                      <a routerLink = "/pharmacy/productview/{{i.item.id}}/{{i.pharma.title.user.id}}" class="btn btn-primary">details</a>
                     </div>
                   </div>
                 </div>

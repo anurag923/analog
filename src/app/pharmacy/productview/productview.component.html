@@ -32,7 +32,7 @@
                     <img src="http://3.14.150.254:8000{{individualProduct.item.image}}" class="img-fluid" alt="User Image">
                 </div>
                 <div class="doc-info-cont">
-                  <h4 class="doc-name mb-2">{{individualProduct.item.name}}</h4>
+                  <h4 class="doc-name mb-2" #itemName>{{individualProduct.item.name}}</h4>
                   <p><span class="text-muted">Manufactured By </span> Hamdard (Wakf) Laboratories</p>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                   <div class="feature-product pt-4">
@@ -180,8 +180,11 @@
         <!-- Right Details -->
         <div class="card search-filter">
           <div class="card-body">
+            {{userDisplayName}}
             <div class="clini-infos mt-0">
-              <h2>{{individualProduct.new_price}}<b class="text-lg strike">{{individualProduct.old_price}}</b>  <span class="text-lg text-success"><b>{{individualProduct.offer}}</b></span></h2>
+              <input type="hidden" name="productid" value="{{individualProduct.item.id}}" #productId>
+              <input type="hidden" name="pharmaid" value="{{individualProduct.pharma.title.user.id}}" #pharmaId>
+              <h2><b #price>{{individualProduct.new_price}}</b><b class="text-lg strike">{{individualProduct.old_price}}</b>  <span class="text-lg text-success"><b>{{individualProduct.offer}}</b></span></h2>
             </div>
             <span class="badge badge-primary">In stock</span>
             <div class="custom-increment pt-4">
@@ -191,7 +194,7 @@
                                         <span><i class="fas fa-minus"></i></span>
                                       </button>
                                   </span>
-                                  <input type="text" id="quantity" name="quantity" class=" input-number" value="10">
+                                  <input type="text" id="quantity" name="quantity" class=" input-number" value="1" #quantity >
                                   <span class="input-group-btn float-right">
                                       <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
                                           <span><i class="fas fa-plus"></i></span>
@@ -201,7 +204,10 @@
                         </div>
             <div class="clinic-details mt-4">
               <div class="clinic-booking">
-                <a class="apt-btn" style="cursor:pointer;" routerLink = "/pharmacy/addtocart">Add To Cart</a>
+                <p></p>
+                <p #medid>1</p>
+                <p #total>500</p>
+                <a class="apt-btn" style="cursor:pointer;" (click)="addToCart()">Add To Cart</a>
               </div>
             </div>
             <div class="card flex-fill mt-4 mb-0">

@@ -9,13 +9,16 @@ import { NovitaService } from 'src/app/services/novita.service';
 })
 export class LoginComponent implements OnInit {
 
+  
   constructor(private novitaservice:NovitaService, private router:Router) { }
   submitted = false;
   loginData = {
     username:'',
     password:''
   }
+  userdetails:any;
   ngOnInit(): void {
+    
   }
 
   login(): void {
@@ -29,12 +32,14 @@ export class LoginComponent implements OnInit {
         response => {
           console.log(response);
           this.submitted = true;
-          sessionStorage.setItem('loggedUser', data.username);
+          this.userdetails = response;
           this.router.navigateByUrl('/');
+          sessionStorage.setItem('loggedUser', data.username);
         },
         error => {
           console.log(error);
         });
+
   }
 
 }
