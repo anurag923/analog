@@ -6,12 +6,13 @@ import { LablistComponent } from './lablist/lablist.component';
 import { BooktestComponent } from './booktest/booktest.component';
 import { LabcheckoutComponent } from './labcheckout/labcheckout.component';
 import { PaysuccessComponent } from './paysuccess/paysuccess.component';
+import { LabcartComponent } from './labcart/labcart.component';
 
 
 
 
 @NgModule({
-  declarations: [LabsComponent, LabdescriptionComponent, LablistComponent, BooktestComponent, LabcheckoutComponent, PaysuccessComponent],
+  declarations: [LabsComponent, LabdescriptionComponent, LablistComponent, BooktestComponent, LabcheckoutComponent, PaysuccessComponent, LabcartComponent],
   imports: [
     CommonModule
   ]

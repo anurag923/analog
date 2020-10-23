@@ -47,6 +47,8 @@ import { BooktestComponent } from './lab/booktest/booktest.component';
 import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
 import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 import { AuthGuardService } from './auth-guard.service';
+import { HospitalsComponent } from './hospitals/hospitals.component'
+import { LabcartComponent } from './lab/labcart/labcart.component';
 const routes: Routes = [
 
            {
@@ -137,7 +139,7 @@ const routes: Routes = [
             path:'pharmacy/productview/:itemid/:pharmaid', component:ProductviewComponent
           },
           {
-            path:'pharmacy/addtocart', component:AddtocartComponent , canActivate : [AuthGuardService]
+            path:'pharmacy/addtocart', component:AddtocartComponent
           },
           {
             path:'pharmacy/paymentsuccess', component:PaymentsuccessComponent
@@ -155,6 +157,9 @@ const routes: Routes = [
             path:'lab/lablist', component:LablistComponent
           },
           {
+            path:'lab/labcart', component:LabcartComponent
+          },
+          {
             path:'lab/booktest/:labid/:testid', component:BooktestComponent
           },
           {
@@ -166,6 +171,11 @@ const routes: Routes = [
           {
             path:'lab/paysuccess', component:PaysuccessComponent
           },
+          {
+            path:'hospitals', component:HospitalsComponent
+          },
+
+
 
                     {
                       path:'doctor/appointments', component:AppointmentsComponent

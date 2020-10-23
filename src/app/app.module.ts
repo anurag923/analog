@@ -65,6 +65,8 @@ import { LabdescriptionComponent } from './lab/labdescription/labdescription.com
 import { LabcheckoutComponent } from './lab/labcheckout/labcheckout.component';
 import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 import { AuthGuardService } from './auth-guard.service';
+import { HospitalsComponent } from './hospitals/hospitals.component';
+import { LabcartComponent } from './lab/labcart/labcart.component';
 
 
 @NgModule({
@@ -124,7 +126,9 @@ import { AuthGuardService } from './auth-guard.service';
     UniquePipe,
     LabdescriptionComponent,
     LabcheckoutComponent,
-    PaysuccessComponent
+    PaysuccessComponent,
+    HospitalsComponent,
+    LabcartComponent
 
   ],
   imports: [

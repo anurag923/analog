@@ -158,6 +158,8 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" [routerLink]="['lab/booktest']">Book Test</a>
               <div class="dropdown-divider"></div>
+              <div class="dropdown-item" [routerLink]="['lab/labcart']">Lab Test Cart</div>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" [routerLink]="['lab/labcheckout']">Lab Test Checkout</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" [routerLink]="['/lab/paysuccess']">Payment Success</a>
@@ -166,15 +168,16 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link px-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Clinic <i class="fa fa-chevron-down icn-fn"></i>
+              Hospital/Clinic <i class="fa fa-chevron-down icn-fn"></i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Hospitals</a>
+              <a class="dropdown-item" [routerLink]="['hospitals']">Hospital/Clinic</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Clinics</a>
+              <a class="dropdown-item" href="#">Hospital List</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Hospital/Clinic Details</a>
+              <a class="dropdown-item" href="#">Hospital View</a>
               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Booking</a>
             </div>
           </li>
 
@@ -187,7 +190,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <a class="nav-link" href="#"> <img src="../../assets/images/header-icons/phone-icon.png" class="phn-sz"> +91 40-2536589</a>
-          
+
           <div *ngIf = "userDisplayName;else notloggedin">
             {{userDisplayName}} <a (click)="logout()" style="cursor:pointer;">logout</a>
           </div>
