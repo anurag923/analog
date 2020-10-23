@@ -10,6 +10,7 @@ const baseUrl_diagnostic = 'http://3.14.150.254:8000/api/reg/diagnostic/';
 const baseUrl_diagnostic_ind = 'http://3.14.150.254:8000/api/reg/diagnostic/tests/';
 const login_url = 'http://3.14.150.254:8000/api/reg/loginotp/';
 const logout_url = 'http://3.14.150.254:8000/api/reg/logout/';
+const cartPost = 'http://3.14.150.254:8000/api/cart/item/';
 
 @Injectable({
   providedIn: 'root'
@@ -57,6 +58,11 @@ export class NovitaService {
 }
   logout(): Observable<any> {
     return this.http.get(logout_url);
+  }
+
+  addItemToCart(data): Observable<any> {
+    // const headers = { 'content-type': 'application/json'}
+    return this.http.post(cartPost,data);
   }
 }
 

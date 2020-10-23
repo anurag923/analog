@@ -14,12 +14,12 @@ export class BooktestComponent implements OnInit {
   ngOnInit(): void {
     this.getTest(this.route.snapshot.paramMap.get('labid'),this.route.snapshot.paramMap.get('testid'));
   }
-  individualdiagnostic = null;
+  individualtest = null;
   getTest(labid,testid): void {
     this.novitaservice.getIndTest(labid,testid)
       .subscribe(
         data => {
-          this.individualdiagnostic = data;
+          this.individualtest = data;
           console.log(data);
         },
         error => {

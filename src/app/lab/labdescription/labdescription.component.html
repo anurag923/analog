@@ -47,7 +47,7 @@
               <div class="clinic-details">
                 <div class="clini-infos pt-3">
 
-                <p class="doc-location mb-2"><i class="fas fa-phone-volume mr-1"></i> 320-795-8815</p>
+                <p class="doc-location mb-2"><i class="fas fa-phone-volume mr-1"></i>{{ind.lab.detail.phone}}</p>
                 <p class="doc-location mb-2 text-ellipse"><i class="fas fa-map-marker-alt mr-1"></i> 96 Red Hawk Road Cyrus, MN 56323 </p>
                 <p class="doc-location mb-2"><i class="fas fa-chevron-right mr-1"></i> Chemists, Surgical Equipment Dealer</p>
 
@@ -114,7 +114,7 @@
 
                             <div class="d-flex justify-content-between">
                                 <h6 class="clr-bl"><span>₹{{i.new_price}}</span></h6>
-                                <h6 class="clr-bl"><a routerLink = "/lab/booktest/{{i.lab.user.id}}/{{i.id}}" style="cursor: pointer;">ADD</a></h6>
+                                <h6 class="clr-bl"><a routerLink = "/lab/booktest/{{i.lab.detail.user.id}}/{{i.id}}" style="cursor: pointer;">ADD</a></h6>
                             </div>
                           </div>
                         </div>
