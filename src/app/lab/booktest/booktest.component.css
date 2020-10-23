@@ -35,7 +35,7 @@
 .six {
   border-radius: 2px;
   border: 1px solid #cacad3;
-  padding-bottom: 20px;
+
   background-color: #fff;
 }
 .seven {
@@ -45,7 +45,7 @@
 }
 
 .eight {
-  padding: 0 20px 20px;
+
   background-color: #fff;
   line-height: 1.61;
 }
@@ -97,4 +97,9 @@ age{
 }
 .para{
   color: #787887;
+}
+.bg-blue
+{
+  background-color:#005594;
+  color:#fff;
 }

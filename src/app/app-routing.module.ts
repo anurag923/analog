@@ -160,7 +160,7 @@ const routes: Routes = [
             path:'lab/labcart', component:LabcartComponent
           },
           {
-            path:'lab/booktest/:labid/:testid', component:BooktestComponent
+            path:'lab/booktest', component:BooktestComponent
           },
           {
             path:'lab/labdescription/:diagnosticid', component:LabdescriptionComponent

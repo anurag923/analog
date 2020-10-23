@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+declare var $:any;
 
 @Component({
   selector: 'app-hospitals',
@@ -12,6 +13,13 @@ export class HospitalsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  function () {
+    $(".toggle").click(function () {
+      $(".sidebar-contact").toggleClass("active");
+      $(".toggle").toggleClass("active");
+    });
+}
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -36,5 +44,6 @@ export class HospitalsComponent implements OnInit {
     },
     nav: true
   }
-}
 
+
+}
