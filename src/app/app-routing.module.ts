@@ -49,7 +49,9 @@ import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 import { AuthGuardService } from './auth-guard.service';
 import { HospitalsComponent } from './hospitals/hospitals.component'
 import { LabcartComponent } from './lab/labcart/labcart.component';
-import { HosplistComponent } from './hospitals/hosplist/hosplist.component'
+import { HosplistComponent } from './hospitals/hosplist/hosplist.component';
+import { HospitalviewComponent } from './hospitals/hospitalview/hospitalview.component';
+import { HospitalbookingComponent } from './hospitals/hospitalbooking/hospitalbooking.component';
 const routes: Routes = [
 
            {
@@ -178,9 +180,12 @@ const routes: Routes = [
           {
             path:'hospitals/hosplist', component:HosplistComponent
           },
-
-
-
+          {
+            path:'hospitals/hospitalview', component:HospitalviewComponent
+          },
+          {
+            path:'hospitals/hospitalbooking', component:HospitalbookingComponent
+          },
                     {
                       path:'doctor/appointments', component:AppointmentsComponent
                     },

@@ -69,6 +69,7 @@ import { HospitalsComponent } from './hospitals/hospitals.component';
 import { LabcartComponent } from './lab/labcart/labcart.component';
 import { HosplistComponent } from './hospitals/hosplist/hosplist.component';
 import { HospitalviewComponent } from './hospitals/hospitalview/hospitalview.component';
+import { HospitalbookingComponent } from './hospitals/hospitalbooking/hospitalbooking.component';
 
 
 @NgModule({
@@ -132,8 +133,8 @@ import { HospitalviewComponent } from './hospitals/hospitalview/hospitalview.com
     HospitalsComponent,
     LabcartComponent,
     HosplistComponent,
-    HospitalviewComponent
-
+    HospitalviewComponent,
+    HospitalbookingComponent
   ],
   imports: [
     BrowserModule,
