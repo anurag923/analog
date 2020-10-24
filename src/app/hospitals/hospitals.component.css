@@ -210,3 +210,57 @@ color: #fff;
   cursor: pointer;
   line-height: 4.8;
 }
+.testimonial{
+  text-align: center;
+}
+.description{
+    color:#656565;
+    font-size: 17px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    padding:0px 11%;
+    position: relative;
+}
+.description:before{
+    content: url(../../assets/images/hospitals/leftquote.png);
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    left: 2%;
+    color:#3498db;
+    font-size: 36px;
+}
+.description:after{
+    content: url(../../assets/images/hospitals/rightquote.png);
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 2%;
+    color:#3498db;
+    font-size: 36px;
+}
+.pic{
+    width: 94px;
+    height: 94px;
+    margin: 0 auto;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial-title{
+    font-size: 18px;
+    color:#333;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.testimonial-title > small{
+    display: block;
+    color:#656565;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
