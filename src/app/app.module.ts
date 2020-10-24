@@ -67,6 +67,8 @@ import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 import { AuthGuardService } from './auth-guard.service';
 import { HospitalsComponent } from './hospitals/hospitals.component';
 import { LabcartComponent } from './lab/labcart/labcart.component';
+import { HosplistComponent } from './hospitals/hosplist/hosplist.component';
+import { HospitalviewComponent } from './hospitals/hospitalview/hospitalview.component';
 
 
 @NgModule({
@@ -128,7 +130,9 @@ import { LabcartComponent } from './lab/labcart/labcart.component';
     LabcheckoutComponent,
     PaysuccessComponent,
     HospitalsComponent,
-    LabcartComponent
+    LabcartComponent,
+    HosplistComponent,
+    HospitalviewComponent
 
   ],
   imports: [

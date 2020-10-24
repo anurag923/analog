@@ -49,6 +49,7 @@ import { PaysuccessComponent } from './lab/paysuccess/paysuccess.component';
 import { AuthGuardService } from './auth-guard.service';
 import { HospitalsComponent } from './hospitals/hospitals.component'
 import { LabcartComponent } from './lab/labcart/labcart.component';
+import { HosplistComponent } from './hospitals/hosplist/hosplist.component'
 const routes: Routes = [
 
            {
@@ -173,6 +174,9 @@ const routes: Routes = [
           },
           {
             path:'hospitals', component:HospitalsComponent
+          },
+          {
+            path:'hospitals/hosplist', component:HosplistComponent
           },
 
 

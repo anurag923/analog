@@ -264,3 +264,31 @@ color: #fff;
     text-transform: uppercase;
     margin-top: 5px;
 }
+.bg-adf
+{
+  background-color:#adf;
+}
+.bg-ededee
+{
+  background-color:#ededee;
+}
+.ul-cls li
+{
+  margin:15px 2px;
+}
+.ul-cls li a
+{
+  font-size: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 26%;
+    padding: 10px;
+    border: 1px solid #005594;
+}
+.ul-cls li a:hover
+{
+  text-decoration:none;
+  background:#005594;
+  color:#fff;
+  border:1px solid #fff;
+}
