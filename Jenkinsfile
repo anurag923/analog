@@ -31,7 +31,7 @@ node(){
      }
 }
 
-node('novita') {
+node('novita new UI') {
     echo 'Unstash'
     unstash 'bundleArtifacts'
     echo 'Artifacts copied'
